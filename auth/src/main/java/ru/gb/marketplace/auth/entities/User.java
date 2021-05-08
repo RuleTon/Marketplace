@@ -1,4 +1,4 @@
-package ru.gb.marketplace.core.model;
+package ru.gb.marketplace.auth.entities;
 
 import lombok.Data;
 
@@ -11,7 +11,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column
     private String login;
@@ -22,5 +22,4 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
-
 }

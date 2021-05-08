@@ -1,4 +1,4 @@
-package ru.gb.marketplace.core.model;
+package ru.gb.marketplace.auth.entities;
 
 import lombok.Data;
 
@@ -11,8 +11,10 @@ public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column
     private String name;
+
 }
+

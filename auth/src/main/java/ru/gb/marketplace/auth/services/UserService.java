@@ -1,13 +1,12 @@
-package ru.gb.marketplace.core.services;
+package ru.gb.marketplace.auth.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import ru.gb.marketplace.core.model.Role;
-import ru.gb.marketplace.core.model.User;
-import ru.gb.marketplace.core.repositories.RoleRepository;
-import ru.gb.marketplace.core.repositories.UserRepository;
-
+import ru.gb.marketplace.auth.entities.Role;
+import ru.gb.marketplace.auth.entities.User;
+import ru.gb.marketplace.auth.repositories.RoleRepository;
+import ru.gb.marketplace.auth.repositories.UserRepository;
 
 @Service
 public class UserService {
@@ -41,4 +40,5 @@ public class UserService {
         }
         return null;
     }
+
 }
